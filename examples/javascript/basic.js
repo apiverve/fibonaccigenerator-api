@@ -13,14 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/fibonaccigenerator';
  */
 async function callFibonacciGeneratorAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            count: &#x27;10&#x27;,
-            maxvalue: &#x27;1000&#x27;,
-            startfrom: &#x27;0&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
