@@ -1,47 +1,42 @@
 openapi: 3.0.4
 info:
   title: Fibonacci Generator
-  description: Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It can generate sequences by count or up to a maximum value, with options to start from any position in the sequence.
+  description: >-
+    Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It
+    can generate sequences by count or up to a maximum value, with options to
+    start from any position in the sequence.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/fibonaccigenerator:
     get:
-      summary: Generate Fibonacci Sequence
-      description: Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It can generate sequences by count or up to a maximum value, with options to start from any position in the sequence.
+      summary: Generate by Count
+      description: Generate a specific number of Fibonacci numbers
       operationId: fibonaccigenerator
       parameters:
-      - name: count
-        in: query
-        schema:
-          type: string
-        required: false
-        description: Number of Fibonacci numbers to generate (1-1000, provide either count or maxvalue)
-        example: '10'
-      - name: maxvalue
-        in: query
-        schema:
-          type: string
-        required: false
-        description: Generate Fibonacci numbers up to this value (provide either count or maxvalue)
-        example: '1000'
-      - name: startfrom
-        default: '0'
-        in: query
-        schema:
-          type: string
-        required: false
-        description: 'Start from this position in the sequence (default: 0)'
-        example: '0'
+        - name: count
+          in: query
+          schema:
+            type: integer
+          required: true
+          description: Number of Fibonacci numbers to generate
+          example: 10
+        - name: startfrom
+          in: query
+          schema:
+            type: integer
+          required: false
+          description: Start from this position in the sequence
+          example: 0
       responses:
         '200':
           description: Successful Response
@@ -57,41 +52,41 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   sequence:
-                  - 0
-                  - 1
-                  - 1
-                  - 2
-                  - 3
-                  - 5
-                  - 8
-                  - 13
-                  - 21
-                  - 34
+                    - 0
+                    - 1
+                    - 1
+                    - 2
+                    - 3
+                    - 5
+                    - 8
+                    - 13
+                    - 21
+                    - 34
                   count: 10
                   start_from: 0
                   first_value: 0
                   last_value: 34
                   sum: 88
                   ratios:
-                  - 1.666667
-                  - 1.6
-                  - 1.625
-                  - 1.615385
-                  - 1.619048
+                    - 1.666667
+                    - 1.6
+                    - 1.625
+                    - 1.615385
+                    - 1.619048
                   golden_ratio_approximation: 1.619048
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -99,4 +94,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
