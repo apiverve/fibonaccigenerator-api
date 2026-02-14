@@ -17,14 +17,11 @@ def call_fibonaccigenerator_api():
     Make a GET request to the Fibonacci Generator API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;count&#x27;: &#x27;10&#x27;, &#x27;maxvalue&#x27;: &#x27;1000&#x27;, &#x27;startfrom&#x27;: &#x27;0&#x27;}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
