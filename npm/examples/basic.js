@@ -15,9 +15,8 @@ const api = new fibonaccigeneratorAPI({
 
 // Example query
 var query = {
-  count: "10",
-  maxvalue: "1000",
-  startfrom: "0"
+  count: 10,
+  startfrom: 0
 };
 
 // Make the API request using callback
