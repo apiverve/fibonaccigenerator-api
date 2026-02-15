@@ -11,22 +11,13 @@ namespace APIVerve.API.FibonacciGenerator
     public class FibonacciGeneratorQueryOptions
     {
         /// <summary>
-        /// Number of Fibonacci numbers to generate (1-1000, provide either count or maxvalue)
-        /// Example: 10
+        /// Number of Fibonacci numbers to generate
         /// </summary>
         [JsonProperty("count")]
         public string Count { get; set; }
 
         /// <summary>
-        /// Generate Fibonacci numbers up to this value (provide either count or maxvalue)
-        /// Example: 1000
-        /// </summary>
-        [JsonProperty("maxvalue")]
-        public string Maxvalue { get; set; }
-
-        /// <summary>
-        /// Start from this position in the sequence (default: 0)
-        /// Example: 0
+        /// Start from this position in the sequence
         /// </summary>
         [JsonProperty("startfrom")]
         public string Startfrom { get; set; }
