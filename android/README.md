@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:fibonaccigenerator-api:1.1.13'
+    implementation 'com.github.apiverve:fibonaccigenerator-api:1.1.14'
 }
 ```
 
