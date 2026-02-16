@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/fibonaccigenerator",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It can generate sequences by count or up to a maximum value, with options to start from any position in the sequence.",
   "main": "index.js",
   "types": "index.d.ts",
