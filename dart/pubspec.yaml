@@ -1,0 +1,16 @@
+name: apiverve_fibonaccigenerator
+description: Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It can generate sequences by count or up to a maximum value, with options to start from any position in the sequence.
+version: 1.1.14
+homepage: https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=homepage
+repository: https://github.com/apiverve/fibonaccigenerator-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
