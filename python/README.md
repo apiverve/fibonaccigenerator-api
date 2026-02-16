@@ -44,7 +44,10 @@ from apiverve_fibonaccigenerator.apiClient import FibonaccigeneratorAPIClient
 # Initialize the client with your APIVerve API key
 api = FibonaccigeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "count": 10, "startfrom": 0 }
+query = {
+    "count": 10,
+    "startfrom": 0
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "count": 10, "startfrom": 0 }
+query = {
+    "count": 10,
+    "startfrom": 0
+}
 ```
 
 ###### Simple Request
@@ -144,7 +150,10 @@ from apiverve_fibonaccigenerator.apiClient import FibonaccigeneratorAPIClient, F
 
 api = FibonaccigeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "count": 10, "startfrom": 0 }
+query = {
+    "count": 10,
+    "startfrom": 0
+}
 
 try:
     result = api.execute(query)
@@ -165,7 +174,10 @@ from apiverve_fibonaccigenerator.apiClient import FibonaccigeneratorAPIClient, F
 
 api = FibonaccigeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "count": 10, "startfrom": 0 }
+query = {
+    "count": 10,
+    "startfrom": 0
+}
 
 try:
     result = api.execute(query)
@@ -199,7 +211,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_fibonaccigenerator.apiClient import FibonaccigeneratorAPIClient, FibonaccigeneratorAPIClientError
 
-query = { "count": 10, "startfrom": 0 }
+query = {
+    "count": 10,
+    "startfrom": 0
+}
 
 # Using context manager ensures proper cleanup
 with FibonaccigeneratorAPIClient("[YOUR_API_KEY]") as api:
@@ -225,7 +240,10 @@ from apiverve_fibonaccigenerator.apiClient import FibonaccigeneratorAPIClient
 # Enable debug mode
 api = FibonaccigeneratorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "count": 10, "startfrom": 0 }
+query = {
+    "count": 10,
+    "startfrom": 0
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -240,8 +258,12 @@ from apiverve_fibonaccigenerator.apiClient import FibonaccigeneratorAPIClient
 
 api = FibonaccigeneratorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "count": 10,
+    "startfrom": 0
+}
+
 try:
-    query = { "count": 10, "startfrom": 0 }
     result = api.execute(query)
     print(result)
 finally:
