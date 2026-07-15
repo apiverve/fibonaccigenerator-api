@@ -4,23 +4,35 @@ declare module '@apiverve/fibonaccigenerator' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface fibonaccigeneratorResponse {
     status: string;
     error: string | null;
     data: FibonacciGeneratorData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface FibonacciGeneratorData {
-      sequence:                 number[];
-      count:                    number;
-      startFrom:                number;
-      firstValue:               number;
-      lastValue:                number;
-      sum:                      number;
-      ratios:                   number[];
-      goldenRatioApproximation: number;
+      sequence:                 (number | null)[];
+      count:                    number | null;
+      startFrom:                number | null;
+      firstValue:               number | null;
+      lastValue:                number | null;
+      sum:                      number | null;
+      ratios:                   (number | null)[];
+      goldenRatioApproximation: number | null;
   }
 
   export default class fibonaccigeneratorWrapper {
