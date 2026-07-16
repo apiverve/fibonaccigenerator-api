@@ -192,11 +192,52 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Fibonacci Generator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "sequence": [
+      0,
+      1,
+      1,
+      2,
+      3,
+      5,
+      8,
+      13,
+      21,
+      34
+    ],
+    "count": 10,
+    "start_from": 0,
+    "first_value": 0,
+    "last_value": 34,
+    "sum": 88,
+    "ratios": [
+      1.666667,
+      1.6,
+      1.625,
+      1.615385,
+      1.619048
+    ],
+    "golden_ratio_approximation": 1.619048
+  }
 }
 ```
 
