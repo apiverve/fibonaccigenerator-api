@@ -25,32 +25,47 @@ namespace APIVerve.API.FibonacciGenerator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("sequence")]
-        public long[] Sequence { get; set; }
+        public long?[] Sequence { get; set; }
 
         [JsonProperty("count")]
-        public long Count { get; set; }
+        public long? Count { get; set; }
 
         [JsonProperty("start_from")]
-        public long StartFrom { get; set; }
+        public long? StartFrom { get; set; }
 
         [JsonProperty("first_value")]
-        public long FirstValue { get; set; }
+        public long? FirstValue { get; set; }
 
         [JsonProperty("last_value")]
-        public long LastValue { get; set; }
+        public long? LastValue { get; set; }
 
         [JsonProperty("sum")]
-        public long Sum { get; set; }
+        public long? Sum { get; set; }
 
         [JsonProperty("ratios")]
-        public double[] Ratios { get; set; }
+        public double?[] Ratios { get; set; }
 
         [JsonProperty("golden_ratio_approximation")]
-        public double GoldenRatioApproximation { get; set; }
+        public double? GoldenRatioApproximation { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
