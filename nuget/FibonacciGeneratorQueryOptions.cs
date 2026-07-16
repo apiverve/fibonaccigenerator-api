@@ -14,12 +14,12 @@ namespace APIVerve.API.FibonacciGenerator
         /// Number of Fibonacci numbers to generate
         /// </summary>
         [JsonProperty("count")]
-        public string Count { get; set; }
+        public int Count { get; set; }
 
         /// <summary>
         /// Start from this position in the sequence
         /// </summary>
         [JsonProperty("startfrom")]
-        public string Startfrom { get; set; }
+        public int? Startfrom { get; set; }
     }
 }
