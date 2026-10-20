@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/fibonaccigenerator",
-  "version": "1.2.0",
-  "description": "Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It can generate sequences by count or up to a maximum value, with options to start from any position in the sequence.",
+  "version": "1.2.2",
+  "description": "Fibonacci Generator computes Fibonacci numbers and sequences based on a target count or ceiling value. Each response provides the generated sequence starting from any position, total sum, step ratios, and a golden ratio approximation.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/fibonaccigenerator-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/fibonaccigenerator?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/fibonaccigenerator?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

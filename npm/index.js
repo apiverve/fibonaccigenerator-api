@@ -30,7 +30,7 @@ class fibonaccigeneratorWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/fibonaccigenerator';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"count":{"type":"integer","required":true,"min":1,"max":1000},"startfrom":{"type":"integer","required":false,"min":0,"default":0}};
+        this.validationRules = {"count":{"type":"integer","required":true,"min":1,"max":1000},"startfrom":{"type":"integer","required":false,"min":0,"max":10000,"default":0}};
     }
 
     /**
