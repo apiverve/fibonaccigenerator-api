@@ -1,13 +1,12 @@
-FibonacciGenerator API
+Fibonacci Generator API
 ============
 
-Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It can generate sequences by count or up to a maximum value, with options to start from any position in the sequence.
+Fibonacci Generator computes Fibonacci numbers and sequences based on a target count or ceiling value. Each response provides the generated sequence starting from any position, total sum, step ratios, and a golden ratio approximation.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [FibonacciGenerator API](https://apiverve.com/marketplace/fibonaccigenerator?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.FibonacciGenerator.svg)](https://www.nuget.org/packages/APIVerve.API.FibonacciGenerator)
+
+This is a .NET wrapper for the [Fibonacci Generator API](https://apiverve.com/marketplace/fibonaccigenerator?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the fibonaccigenerator API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Fibonacci Generator API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,9 +60,9 @@ class Program
         var apiClient = new FibonacciGeneratorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new FibonacciGeneratorQueryOptions {
-    Count = 10,
-    Startfrom = 0
-};
+            Count = 10,
+            Startfrom = 0
+        };
 
         // Make the API call
         try
@@ -93,13 +92,13 @@ class Program
 
 ## Usage
 
-The FibonacciGenerator API documentation is found here: [https://docs.apiverve.com/ref/fibonaccigenerator](https://docs.apiverve.com/ref/fibonaccigenerator?utm_source=nuget&utm_medium=readme).
+The Fibonacci Generator API documentation is found here: [https://docs.apiverve.com/ref/fibonaccigenerator](https://docs.apiverve.com/ref/fibonaccigenerator?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-FibonacciGenerator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Fibonacci Generator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -126,9 +125,9 @@ public class Example
         var apiClient = new FibonacciGeneratorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new FibonacciGeneratorQueryOptions {
-    Count = 10,
-    Startfrom = 0
-};
+            Count = 10,
+            Startfrom = 0
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -159,9 +158,9 @@ public class Example
         var apiClient = new FibonacciGeneratorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new FibonacciGeneratorQueryOptions {
-    Count = 10,
-    Startfrom = 0
-};
+            Count = 10,
+            Startfrom = 0
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -197,9 +196,9 @@ public class Example
         var apiClient = new FibonacciGeneratorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new FibonacciGeneratorQueryOptions {
-    Count = 10,
-    Startfrom = 0
-};
+            Count = 10,
+            Startfrom = 0
+        };
 
         try
         {
@@ -254,9 +253,9 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new FibonacciGeneratorQueryOptions {
-    Count = 10,
-    Startfrom = 0
-};
+            Count = 10,
+            Startfrom = 0
+        };
 
         try
         {
@@ -409,7 +408,7 @@ using (var apiClient = new FibonacciGeneratorAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -420,12 +419,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

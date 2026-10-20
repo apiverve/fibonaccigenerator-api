@@ -68,7 +68,7 @@ namespace APIVerve.API.FibonacciGenerator
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
             { "count", new ValidationRule { Type = "integer", Required = true, Min = 1, Max = 1000 } },
-            { "startfrom", new ValidationRule { Type = "integer", Required = false, Min = 0 } }
+            { "startfrom", new ValidationRule { Type = "integer", Required = false, Min = 0, Max = 10000 } }
         };
 
         /// <summary>Format validation patterns</summary>
