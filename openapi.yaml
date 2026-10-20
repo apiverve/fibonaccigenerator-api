@@ -2,9 +2,10 @@ openapi: 3.0.4
 info:
   title: Fibonacci Generator
   description: >-
-    Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It
-    can generate sequences by count or up to a maximum value, with options to
-    start from any position in the sequence.
+    Fibonacci Generator computes Fibonacci numbers and sequences based on a
+    target count or ceiling value. Each response provides the generated sequence
+    starting from any position, total sum, step ratios, and a golden ratio
+    approximation.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +20,7 @@ servers:
 paths:
   /v1/fibonaccigenerator:
     get:
-      summary: Generate by Count
+      summary: Fibonacci Generator
       description: Generate a specific number of Fibonacci numbers
       operationId: fibonaccigenerator
       parameters:
