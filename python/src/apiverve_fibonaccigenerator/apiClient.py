@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -25,7 +25,7 @@ class FibonaccigeneratorAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
         "count": {"type": "integer", "required": True, "min": 1, "max": 1000},
-        "startfrom": {"type": "integer", "required": False, "min": 0, "default": 0}
+        "startfrom": {"type": "integer", "required": False, "min": 0, "max": 10000, "default": 0}
     }
 
     # Format validation patterns
