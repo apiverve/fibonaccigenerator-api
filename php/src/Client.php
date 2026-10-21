@@ -19,7 +19,7 @@ use APIVerve\Fibonaccigenerator\Exceptions\ValidationException;
  * print_r($response);
  * ```
  *
- * @see https://apiverve.com/marketplace/fibonaccigenerator?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/fibonaccigenerator?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -35,7 +35,7 @@ class Client
      */
     private const VALIDATION_RULES = [
         'count' => ['type' => 'integer', 'required' => true, 'min' => 1, 'max' => 1000],
-        'startfrom' => ['type' => 'integer', 'required' => false, 'min' => 0]
+        'startfrom' => ['type' => 'integer', 'required' => false, 'min' => 0, 'max' => 10000]
     ];
 
     /**
