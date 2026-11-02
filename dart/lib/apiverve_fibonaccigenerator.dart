@@ -1,8 +1,8 @@
 /// Fibonacci Generator API client for Dart/Flutter
 ///
-/// Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It can generate sequences by count or up to a maximum value, with options to start from any position in the sequence.
+/// Fibonacci Generator computes Fibonacci numbers and sequences based on a target count or ceiling value. Each response provides the generated sequence starting from any position, total sum, step ratios, and a golden ratio approximation.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=referral&utm_content=readme
 library apiverve_fibonaccigenerator;
 
 export 'src/client.dart';

@@ -1,11 +1,11 @@
 # Fibonacci Generator API - Dart/Flutter Client
 
-Fibonacci Generator is a tool for generating Fibonacci sequence numbers. It can generate sequences by count or up to a maximum value, with options to start from any position in the sequence.
+Fibonacci Generator computes Fibonacci numbers and sequences based on a target count or ceiling value. Each response provides the generated sequence starting from any position, total sum, step ratios, and a golden ratio approximation.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_fibonaccigenerator.svg)](https://pub.dev/packages/apiverve_fibonaccigenerator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Fibonacci Generator API](https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Fibonacci Generator API](https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_fibonaccigenerator: ^1.1.14
+  apiverve_fibonaccigenerator: ^1.2.4
 ```
 
 Then run:
@@ -84,12 +84,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Fibonacci Generator API](https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/fibonaccigenerator](https://docs.apiverve.com/ref/fibonaccigenerator?utm_source=dart&utm_medium=readme)
+- **API Home:** [Fibonacci Generator API](https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/fibonaccigenerator](https://docs.apiverve.com/ref/fibonaccigenerator?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -97,4 +97,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

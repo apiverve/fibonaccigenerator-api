@@ -46,11 +46,11 @@ final _formatPatterns = {
 
 /// Fibonacci Generator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/fibonaccigenerator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [count] (required) - Number of Fibonacci numbers to generate [min: 1, max: 1000]
-/// * [startfrom] - Start from this position in the sequence [min: 0]
+/// * [startfrom] - Start from this position in the sequence [min: 0, max: 10000]
 class FibonaccigeneratorClient {
   final String apiKey;
   final String baseUrl;
@@ -59,7 +59,7 @@ class FibonaccigeneratorClient {
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
     'count': ValidationRule(type: 'integer', required: true, min: 1, max: 1000),
-    'startfrom': ValidationRule(type: 'integer', required: false, min: 0),
+    'startfrom': ValidationRule(type: 'integer', required: false, min: 0, max: 10000),
   };
 
   FibonaccigeneratorClient(this.apiKey, {
